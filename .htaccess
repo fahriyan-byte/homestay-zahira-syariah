@@ -1,0 +1,6 @@
+# Custom error page untuk Homestay Salsabila Syariah
+ErrorDocument 404 /homestay-zahira-syariah/error.html
+ErrorDocument 403 /homestay-zahira-syariah/error.html
+ErrorDocument 500 /homestay-zahira-syariah/error.html
+ErrorDocument 502 /homestay-zahira-syariah/error.html
+ErrorDocument 503 /homestay-zahira-syariah/error.html
