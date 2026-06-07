@@ -3,422 +3,639 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Salsabila Hotel, hotel syariah premium di Pangkalan Bun dengan kamar bersih, suasana tenang, dan reservasi mudah untuk keluarga maupun perjalanan bisnis.">
-  <meta name="theme-color" content="#0d4432">
-  <title>Salsabila Hotel | Hotel Syariah di Pangkalan Bun</title>
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Homestay Salsabila Syariah, penginapan syariah yang tenang, bersih, dan ramah keluarga di Pangkalan Bun.">
+  <title>Homestay Salsabila Syariah | Pangkalan Bun</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add("js");</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#mainContent">Lewati ke konten utama</a>
-
+  <!-- Loading Screen -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-icon">
+        <span>S</span>
+      </div>
+      <div class="loader-text">
+        <span class="loader-title">Homestay Salsabila</span>
+        <span class="loader-sub">Syariah · Nyaman · Kekeluargaan</span>
+      </div>
+      <div class="loader-bar">
+        <span></span>
+      </div>
+      <div class="loader-dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+<body>
   <header class="site-header" id="siteHeader">
-    <div class="header-bar">
-      <a class="site-logo" href="#home">
-        <span class="site-logo-mark">S</span>
-        <span class="site-logo-text">
-          <strong>Salsabila</strong>
-          <small>Hotel</small>
-        </span>
+    <nav class="nav-shell" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="Homestay Salsabila Syariah">
+        <span class="brand-icon">S</span>
+        <span>Homestay<br>Salsabila</span>
       </a>
-      <button class="menu-btn" id="menuBtn" type="button" aria-label="Buka menu" aria-controls="siteNav" aria-expanded="false">
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu" aria-expanded="false">
         <span></span>
         <span></span>
       </button>
-      <nav class="site-nav" id="siteNav" aria-label="Navigasi utama">
-        <div class="mobile-nav-intro" aria-hidden="true">
-          <span>Menu Navigasi</span>
-          <small>Temukan kenyamanan menginap di Salsabila Hotel</small>
-        </div>
-        <a class="site-nav-link active" href="#home">Beranda</a>
-        <a class="site-nav-link" href="#tentang">Tentang Hotel</a>
-        <a class="site-nav-link" href="#kamar">Kamar</a>
-        <a class="site-nav-link" href="#fasilitas">Fasilitas</a>
-        <a class="site-nav-link" href="#galeri">Galeri</a>
-        <a class="site-nav-link" href="#lokasi">Lokasi</a>
-        <a class="site-nav-link site-nav-cta" href="https://wa.me/6281234567890?text=Halo%20Salsabila%20Hotel%2C%20saya%20ingin%20melakukan%20reservasi." target="_blank" rel="noopener">Reservasi</a>
-      </nav>
-    </div>
+
+      <div class="nav-panel" id="navPanel">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#tentang">Tentang</a>
+        <a class="nav-link" href="#pengalaman">Pengalaman</a>
+        <a class="nav-link" href="#kamar">Kamar</a>
+        <a class="nav-link" href="#galeri">Galeri</a>
+        <a class="nav-link" href="#lokasi">Lokasi</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/6281234567890?text=Halo%20Homestay%20Salsabila%20Syariah%2C%20saya%20ingin%20menanyakan%20ketersediaan%20kamar." target="_blank" rel="noopener">Reservasi</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </nav>
   </header>
 
-  <main id="mainContent">
-    <section class="split-hero section-watch" id="home">
-      <div class="split-hero-left">
-        <div class="split-hero-content">
-          <p class="split-hero-label">Hotel Syariah di Pangkalan Bun</p>
-          <h1 class="split-hero-title">Menginap lebih nyaman, <em>dengan sentuhan elegan.</em></h1>
-          <p class="split-hero-desc">Nikmati pengalaman menginap yang bersih, tenang, dan tertata dengan pelayanan ramah untuk perjalanan keluarga, bisnis, maupun kunjungan luar kota.</p>
-          <div class="split-hero-actions">
-            <a class="btn" href="#book">Cek Ketersediaan</a>
-            <a class="btn btn-outline" href="#kamar">Lihat Kamar</a>
+  <main>
+    <section class="hero section-watch" id="home">
+      <img class="hero-image" src="assets/img/hero.jpg" alt="Foto utama Homestay Salsabila Syariah">
+      <div class="hero-scrim"></div>
+
+      <!-- Decorative floating elements -->
+      <div class="hero-deco">
+        <div class="deco-circle deco-circle--1"></div>
+        <div class="deco-circle deco-circle--2"></div>
+        <div class="deco-circle deco-circle--3"></div>
+        <div class="deco-line deco-line--h"></div>
+        <div class="deco-line deco-line--v"></div>
+      </div>
+
+      <!-- Floating badges -->
+      <div class="hero-badges">
+        <div class="badge badge--syariah">
+          <i data-lucide="moon" aria-hidden="true"></i>
+          <span>Syariah</span>
+        </div>
+        <div class="badge badge--trusted">
+          <i data-lucide="star" aria-hidden="true"></i>
+          <span>Terpercaya</span>
+        </div>
+        <div class="badge badge--family">
+          <i data-lucide="heart" aria-hidden="true"></i>
+          <span>Ramah Keluarga</span>
+        </div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-kicker">
+            <span class="kicker-dot"></span>
+            Homestay Syariah di Pangkalan Bun
+          </p>
+          <h1>Homestay Salsabila</h1>
+          <p class="hero-tagline">Menginap Nyaman, Tenang, dan Penuh Kehangatan</p>
+          <p class="hero-description">Homestay Salsabila menghadirkan penginapan syariah yang bersih, nyaman, ramah keluarga, dan strategis untuk menemani perjalanan Anda di Pangkalan Bun.</p>
+          <div class="hero-actions">
+            <a class="hero-btn hero-btn-primary" href="https://wa.me/6281234567890?text=Halo%20Homestay%20Salsabila%20Syariah%2C%20saya%20ingin%20menanyakan%20ketersediaan%20kamar." target="_blank" rel="noopener">
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              Reservasi via WhatsApp
+            </a>
+            <a class="hero-btn hero-btn-secondary" href="#kamar">
+              <i data-lucide="chevron-right" aria-hidden="true"></i>
+              Lihat Pilihan Kamar
+            </a>
           </div>
-          <div class="split-hero-card" id="book">
-            <form class="book-card" id="reservationForm">
-              <div class="book-card-header">
-                <i data-lucide="calendar-check"></i>
-                <span>Cek Ketersediaan Kamar</span>
+        </div>
+
+        <!-- Trust Stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-count="50">0</span>
+            <span class="stat-label">+ Kamar Tersedia</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">5.0</span>
+            <span class="stat-label">Rating Tamu</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="200">0</span>
+            <span class="stat-label">+ Tamu Puas</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="3">0</span>
+            <span class="stat-label">Tahun Melayani</span>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#tentang" aria-label="Lihat detail">
+          <span></span>
+          <span class="scroll-text">Jelajahi</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="about section-watch" id="tentang">
+      <div class="about-shell">
+        <!-- Section label -->
+        <div class="about-label">
+          <span class="about-label-line"></span>
+          <span class="about-label-text">Tentang Kami</span>
+          <span class="about-label-line"></span>
+        </div>
+
+        <!-- Main story -->
+        <div class="about-story">
+          <div class="about-story-text">
+            <h2>Kisah di Balik<br>Homestay Salsabila</h2>
+            <div class="about-story-content">
+              <p>Homestay Salsabila Syariah lahir dari keinginan sederhana — menyediakan tempat istirahat yang tidak hanya nyaman, tetapi juga membawa ketenangan dan keberkahan bagi setiap tamu yang menginap.</p>
+              <p>Terletak di Pangkalan Bun yang strategis, kami menghadirkan penginapan syariah dengan standar kebersihan tinggi, suasana kekeluargaan yang hangat, serta fasilitas lengkap untuk memenuhi kebutuhan perjalanan Anda — baik untuk liburan keluarga, perjalanan dinas, atau sekadar melepas penat.</p>
+              <p>Setiap detail kamar dan ruang bersama dirancang agar Anda merasa seperti di rumah sendiri. Karena bagi kami, tamu bukan sekadar pengunjung — mereka adalah keluarga.</p>
+            </div>
+            <div class="about-signature">
+              <span class="about-signature-name">— Keluarga Besar Salsabila</span>
+              <span class="about-signature-role">Pengelola Homestay Salsabila Syariah</span>
+            </div>
+          </div>
+          <div class="about-story-media">
+            <div class="about-image-stack">
+              <img src="assets/img/gallery-exterior.jpg" alt="Fasad Homestay Salsabila" loading="lazy">
+              <div class="about-image-accent">
+                <i data-lucide="home" aria-hidden="true"></i>
+                <span>Syariah · Nyaman · Kekeluargaan</span>
               </div>
-              <div class="book-card-body">
-                <div class="book-field">
-                  <label for="checkIn">Check-in</label>
-                  <input id="checkIn" name="checkIn" type="date" required>
-                </div>
-                <div class="book-field">
-                  <label for="checkOut">Check-out</label>
-                  <input id="checkOut" name="checkOut" type="date" required>
-                </div>
-                <div class="book-field">
-                  <label for="roomType">Kamar</label>
-                  <select id="roomType" name="roomType" required>
-                    <option value="Standard Room">Standard Room</option>
-                    <option value="Deluxe Room">Deluxe Room</option>
-                    <option value="Family Room">Family Room</option>
-                  </select>
-                </div>
-                <div class="book-field">
-                  <label for="guestCount">Tamu</label>
-                  <select id="guestCount" name="guestCount" required>
-                    <option value="1 tamu">1</option>
-                    <option value="2 tamu" selected>2</option>
-                    <option value="3-4 tamu">3-4</option>
-                    <option value="5+ tamu">5+</option>
-                  </select>
-                </div>
-                <button class="book-submit" type="submit">
-                  <span>Cek</span>
-                  <i data-lucide="arrow-up-right"></i>
-                </button>
-              </div>
-              <p class="form-msg" id="formMessage" role="alert"></p>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="split-hero-right">
-        <img src="assets/img/hero.jpg" alt="Salsabila Hotel">
-        <div class="split-hero-badges">
-          <span><i data-lucide="sparkles"></i> Kamar Bersih &amp; Nyaman</span>
-          <span><i data-lucide="map-pin"></i> Lokasi Strategis</span>
-          <span><i data-lucide="moon-star"></i> Hotel Syariah</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="statement section-watch" id="tentang">
-      <div class="container">
-        <div class="statement-content reveal">
-          <p class="section-tag"><span></span>Tentang Salsabila Hotel</p>
-          <h2 class="section-title-lg">Keramahan hangat dalam suasana <em>yang lebih berkelas.</em></h2>
-          <p class="statement-lead">Salsabila Hotel menghadirkan pengalaman menginap yang nyaman, bersih, dan tenang di Pangkalan Bun.</p>
-          <p class="statement-text">Dengan konsep hotel syariah yang ramah keluarga, kami menyediakan ruang istirahat yang tertata, pelayanan bersahabat, serta akses lokasi yang mudah dijangkau.</p>
-        </div>
-        <div class="statement-grid reveal">
-          <div class="statement-item">
-            <i data-lucide="sparkles"></i>
-            <strong>Kamar Bersih</strong>
-            <small>Ruang nyaman untuk beristirahat</small>
-          </div>
-          <div class="statement-item">
-            <i data-lucide="map-pin"></i>
-            <strong>Lokasi Strategis</strong>
-            <small>Mudah dijangkau dari area kota</small>
-          </div>
-          <div class="statement-item">
-            <i data-lucide="moon-star"></i>
-            <strong>Suasana Tenang</strong>
-            <small>Nyaman untuk keluarga &amp; bisnis</small>
-          </div>
-          <div class="statement-item">
-            <i data-lucide="message-circle"></i>
-            <strong>Reservasi Mudah</strong>
-            <small>Konfirmasi langsung via WhatsApp</small>
-          </div>
-          <div class="statement-item">
-            <i data-lucide="briefcase-business"></i>
-            <strong>Keluarga &amp; Bisnis</strong>
-            <small>Fleksibel untuk berbagai perjalanan</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="showcase-full">
-      <div class="showcase-full-inner reveal">
-        <img src="assets/img/living-room.jpg" alt="Ruang bersama Salsabila Hotel" loading="lazy">
-        <div class="showcase-full-text">
-          <p class="section-tag section-tag-light"><span></span>Suasana Hotel</p>
-          <h2>Kenyamanan yang terasa sejak pertama tiba.</h2>
-        </div>
-      </div>
-    </section>
-
-    <section class="rooms-zigzag section-watch" id="kamar">
-      <div class="container">
-        <div class="zigzag-header reveal">
-          <p class="section-tag"><span></span>Pilihan Kamar</p>
-          <h2 class="section-title">Pilih kenyamanan yang sesuai <em>dengan perjalanan Anda.</em></h2>
-          <p>Pilih ruang yang paling sesuai dengan kebutuhan perjalanan Anda. Untuk harga dan ketersediaan terbaru, tim kami siap membantu melalui WhatsApp.</p>
-        </div>
-      </div>
-
-      <article class="zigzag-item reveal">
-        <div class="zigzag-image">
-          <img src="assets/img/gallery-bedroom.jpg" alt="Standard Room" loading="lazy">
-          <span class="zigzag-tag">Favorit</span>
-          <button class="zigzag-expand" type="button" data-lightbox="assets/img/gallery-bedroom.jpg" data-caption="Standard Room"><i data-lucide="maximize-2"></i></button>
-        </div>
-        <div class="zigzag-content">
-          <div class="zigzag-head">
-            <span class="zigzag-num">01</span>
-            <div>
-              <span class="zigzag-cap">1-2 Tamu</span>
-              <h3>Standard Room</h3>
             </div>
           </div>
-          <p>Kamar modern yang rapi untuk perjalanan singkat atau agenda bisnis, lengkap dengan kenyamanan esensial.</p>
-          <ul class="zigzag-features">
-            <li><i data-lucide="bed-double"></i> Queen Bed</li>
-            <li><i data-lucide="snowflake"></i> AC</li>
-            <li><i data-lucide="bath"></i> Kamar Mandi Dalam</li>
-            <li><i data-lucide="wifi"></i> WiFi</li>
-          </ul>
-          <a class="btn" href="https://wa.me/6281234567890?text=Halo%20Salsabila%20Hotel%2C%20saya%20ingin%20reservasi%20Standard%20Room." target="_blank" rel="noopener" data-room-choice="Standard Room">Reservasi</a>
         </div>
-      </article>
 
-      <article class="zigzag-item zigzag-reverse reveal">
-        <div class="zigzag-image">
-          <img src="assets/img/hero.jpg" alt="Deluxe Room" loading="lazy">
-          <span class="zigzag-tag">Premium</span>
-          <button class="zigzag-expand" type="button" data-lightbox="assets/img/hero.jpg" data-caption="Deluxe Room"><i data-lucide="maximize-2"></i></button>
+        <!-- Values pillars -->
+        <div class="about-values">
+          <article class="about-value-card">
+            <div class="value-icon">
+              <i data-lucide="leaf" aria-hidden="true"></i>
+            </div>
+            <h3>Bersih & Higienis</h3>
+            <p>Standar kebersihan tinggi di setiap sudut homestay untuk kenyamanan maksimal Anda.</p>
+          </article>
+          <article class="about-value-card">
+            <div class="value-icon">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </div>
+            <h3>Ramah Keluarga</h3>
+            <p>Suasana hangat dan aman, cocok untuk tamu segala usia dan rombongan keluarga.</p>
+          </article>
+          <article class="about-value-card">
+            <div class="value-icon">
+              <i data-lucide="moon" aria-hidden="true"></i>
+            </div>
+            <h3>Syariah Terpercaya</h3>
+            <p>Lingkungan islami yang menjaga ketenangan dan nilai-nilai syariah selama menginap.</p>
+          </article>
+          <article class="about-value-card">
+            <div class="value-icon">
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+            </div>
+            <h3>Lokasi Strategis</h3>
+            <p>Dekat akses utama kota, pusat perbelanjaan, dan berbagai destinasi di Pangkalan Bun.</p>
+          </article>
         </div>
-        <div class="zigzag-content">
-          <div class="zigzag-head">
-            <span class="zigzag-num">02</span>
-            <div>
-              <span class="zigzag-cap">1-2 Tamu</span>
-              <h3>Deluxe Room</h3>
+
+        <!-- Mission statement -->
+        <div class="about-mission">
+          <blockquote>
+            <p>"Kami percaya bahwa tempat menginap yang baik bukan hanya tentang fasilitas, tetapi juga tentang rasa tenang dan diterima seperti di rumah sendiri."</p>
+          </blockquote>
+        </div>
+
+        <!-- CTA -->
+        <div class="about-cta">
+          <p>Ingin tahu lebih lanjut tentang Homestay Salsabila?</p>
+          <div class="about-cta-actions">
+            <a class="about-btn about-btn-primary" href="https://wa.me/6281234567890?text=Halo%20Homestay%20Salsabila%20Syariah%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20homestay." target="_blank" rel="noopener">
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              Hubungi Kami
+            </a>
+            <a class="about-btn about-btn-secondary" href="#galeri">
+              <i data-lucide="image" aria-hidden="true"></i>
+              Lihat Galeri
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Amenities / Why Choose Us -->
+    <section class="amenities-strip" aria-label="Mengapa memilih kami">
+      <div class="amenities-grid">
+        <article class="amenity-card">
+          <div class="amenity-icon">
+            <i data-lucide="shield-check" aria-hidden="true"></i>
+          </div>
+          <h3>Syariah Terpercaya</h3>
+          <p>Lingkungan islami yang nyaman dan aman untuk seluruh keluarga.</p>
+        </article>
+        <article class="amenity-card">
+          <div class="amenity-icon">
+            <i data-lucide="wifi" aria-hidden="true"></i>
+          </div>
+          <h3>WiFi Cepat</h3>
+          <p>Akses internet stabil untuk bekerja atau bersantai selama menginap.</p>
+        </article>
+        <article class="amenity-card">
+          <div class="amenity-icon">
+            <i data-lucide="car" aria-hidden="true"></i>
+          </div>
+          <h3>Parkir Luas</h3>
+          <p>Area parkir yang aman dan cukup untuk mobil keluarga Anda.</p>
+        </article>
+        <article class="amenity-card">
+          <div class="amenity-icon">
+            <i data-lucide="utensils-crossed" aria-hidden="true"></i>
+          </div>
+          <h3>Dapur Bersama</h3>
+          <p>Fasilitas dapur lengkap untuk memasak dan menyimpan makanan.</p>
+        </article>
+        <article class="amenity-card">
+          <div class="amenity-icon">
+            <i data-lucide="wind" aria-hidden="true"></i>
+          </div>
+          <h3>AC Dingin</h3>
+          <p>Setiap kamar dilengkapi AC untuk kenyamanan istirahat Anda.</p>
+        </article>
+        <article class="amenity-card">
+          <div class="amenity-icon">
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+          </div>
+          <h3>Lokasi Strategis</h3>
+          <p>Dekat akses utama kota dan mudah dijangkau dari berbagai titik.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="image-cards" aria-label="Sorotan homestay">
+      <p class="tiny-label">*Rasa rumah / standar penginapan</p>
+      <div class="mini-gallery" id="miniGallery">
+        <article>
+          <button class="gallery-trigger" type="button" data-lightbox="assets/img/gallery-bedroom.jpg" data-caption="Kamar dengan cahaya natural">
+            <img src="assets/img/gallery-bedroom.jpg" alt="Kamar dengan cahaya natural" loading="lazy">
+          </button>
+          <h2>Natural Light</h2>
+        </article>
+        <article>
+          <button class="gallery-trigger" type="button" data-lightbox="assets/img/gallery-exterior.jpg" data-caption="Kesederhanaan fasad">
+            <img src="assets/img/gallery-exterior.jpg" alt="Tampak depan homestay" loading="lazy">
+          </button>
+          <h2>Minimal Elegance</h2>
+        </article>
+        <article>
+          <button class="gallery-trigger" type="button" data-lightbox="assets/img/gallery-living.jpg" data-caption="Ruang bersama yang lapang">
+            <img src="assets/img/gallery-living.jpg" alt="Ruang keluarga" loading="lazy">
+          </button>
+          <h2>Warm Family Room</h2>
+        </article>
+      </div>
+    </section>
+
+    <section class="landscape-band">
+      <img src="assets/img/gallery-landscape.jpg" alt="Lanskap tenang di sekitar homestay" loading="lazy">
+      <div class="band-caption">
+        <p>Penginapan syariah yang menyatu dengan ketenangan perjalanan keluarga.</p>
+        <a href="https://wa.me/6281234567890?text=Halo%20Homestay%20Salsabila%20Syariah%2C%20saya%20ingin%20menanyakan%20ketersediaan%20kamar." target="_blank" rel="noopener">Cek ketersediaan &rarr;</a>
+      </div>
+    </section>
+
+    <section class="editorial section-watch" id="pengalaman">
+      <div class="editorial-cell image-a">
+        <button class="gallery-trigger" type="button" data-lightbox="assets/img/gallery-landscape.jpg" data-caption="Area homestay yang tenang">
+          <img src="assets/img/gallery-landscape.jpg" alt="Homestay di lanskap terbuka" loading="lazy">
+        </button>
+        <h3>Seamless</h3>
+        <p>Suasana istirahat yang dekat dengan ketenangan.</p>
+      </div>
+
+      <h2 class="display-word word-experience">Experience</h2>
+
+      <div class="editorial-cell image-b">
+        <button class="gallery-trigger" type="button" data-lightbox="assets/img/gallery-kitchen.jpg" data-caption="Dapur dan area bersama">
+          <img src="assets/img/gallery-kitchen.jpg" alt="Sudut dapur homestay" loading="lazy">
+        </button>
+        <h3>Open Space</h3>
+        <p>Ruang sederhana untuk berkumpul dan rehat.</p>
+      </div>
+
+      <div class="editorial-copy image-c">
+        <h3>Natural</h3>
+        <p>Desain sederhana yang terasa bersih, hangat, dan tidak berlebihan.</p>
+        <button class="gallery-trigger" type="button" data-lightbox="assets/img/gallery-dining.jpg" data-caption="Ruang makan yang hangat dan bersih">
+          <img src="assets/img/gallery-dining.jpg" alt="Ruang makan homestay" loading="lazy">
+        </button>
+      </div>
+
+      <h2 class="display-word word-elegance">Elegance</h2>
+
+      <div class="editorial-cell image-d">
+        <h3>Minimalist</h3>
+        <p>Kamar rapi untuk istirahat singkat maupun beberapa malam.</p>
+        <button class="gallery-trigger" type="button" data-lightbox="assets/img/gallery-bathroom.jpg" data-caption="Kamar mandi bersih">
+          <img src="assets/img/gallery-bathroom.jpg" alt="Kamar mandi bersih" loading="lazy">
+        </button>
+      </div>
+
+      <div class="editorial-cell image-e">
+        <button class="gallery-trigger" type="button" data-lightbox="assets/img/gallery-family-room.jpg" data-caption="Family room">
+          <img src="assets/img/gallery-family-room.jpg" alt="Family room" loading="lazy">
+        </button>
+        <h3>Family Stay</h3>
+        <p>Nyaman untuk keluarga kecil dan tamu rombongan.</p>
+      </div>
+
+      <h2 class="display-word word-in">In</h2>
+      <h2 class="display-word word-simplicity">Simplicity</h2>
+    </section>
+
+    <section class="rooms section-watch" id="kamar">
+      <!-- Section label -->
+      <div class="rooms-label">
+        <span class="rooms-label-line"></span>
+        <span class="rooms-label-text">Pilihan Menginap</span>
+        <span class="rooms-label-line"></span>
+      </div>
+
+      <div class="rooms-header">
+        <h2>Temukan Kamar<br>yang Tepat untuk Anda</h2>
+        <p>Setiap kamar dirancang untuk kenyamanan istirahat Anda, dengan suasana syariah yang tenang dan fasilitas lengkap untuk pengalaman menginap yang tak terlupakan.</p>
+      </div>
+
+      <div class="rooms-grid">
+        <!-- Standard Room -->
+        <article class="room-card">
+          <div class="room-card-image">
+            <img src="assets/img/gallery-bedroom.jpg" alt="Standard Room" loading="lazy">
+            <div class="room-card-badge">Populer</div>
+          </div>
+          <div class="room-card-body">
+            <h3>Standard Room</h3>
+            <p class="room-card-desc">Kamar yang nyaman untuk istirahat pribadi, dilengkapi dengan fasilitas dasar untuk kebutuhan menginap Anda.</p>
+            <ul class="room-card-features">
+              <li><i data-lucide="bed-double" aria-hidden="true"></i>Queen Bed</li>
+              <li><i data-lucide="wind" aria-hidden="true"></i>AC Dingin</li>
+              <li><i data-lucide="bath" aria-hidden="true"></i>Kamar Mandi Dalam</li>
+              <li><i data-lucide="wifi" aria-hidden="true"></i>WiFi Cepat</li>
+            </ul>
+            <a class="room-card-btn" href="https://wa.me/6281234567890?text=Halo%20Homestay%20Salsabila%20Syariah%2C%20saya%20ingin%20reservasi%20Standard%20Room." target="_blank" rel="noopener">
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              Reservasi Sekarang
+            </a>
+          </div>
+        </article>
+
+        <!-- Family Room -->
+        <article class="room-card room-card--featured">
+          <div class="room-card-image">
+            <img src="assets/img/gallery-family-room.jpg" alt="Family Room" loading="lazy">
+            <div class="room-card-badge">Terlaris</div>
+          </div>
+          <div class="room-card-body">
+            <h3>Family Room</h3>
+            <p class="room-card-desc">Kamar luas cocok untuk keluarga kecil, dengan tempat tidur tambahan dan ruang yang lebih lega.</p>
+            <ul class="room-card-features">
+              <li><i data-lucide="bed-double" aria-hidden="true"></i>Queen Bed + Extra Bed</li>
+              <li><i data-lucide="users" aria-hidden="true"></i>Kapasitas 3-4 Orang</li>
+              <li><i data-lucide="wind" aria-hidden="true"></i>AC Dingin</li>
+              <li><i data-lucide="wifi" aria-hidden="true"></i>WiFi Cepat</li>
+            </ul>
+            <a class="room-card-btn" href="https://wa.me/6281234567890?text=Halo%20Homestay%20Salsabila%20Syariah%2C%20saya%20ingin%20reservasi%20Family%20Room." target="_blank" rel="noopener">
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              Reservasi Sekarang
+            </a>
+          </div>
+        </article>
+
+        <!-- Whole House -->
+        <article class="room-card">
+          <div class="room-card-image">
+            <img src="assets/img/gallery-exterior.jpg" alt="Whole House" loading="lazy">
+            <div class="room-card-badge">Terbaik</div>
+          </div>
+          <div class="room-card-body">
+            <h3>Whole House</h3>
+            <p class="room-card-desc">Sewa seluruh homestay untuk pengalaman menginap eksklusif bersama keluarga besar atau rombongan.</p>
+            <ul class="room-card-features">
+              <li><i data-lucide="home" aria-hidden="true"></i>Seluruh Area Homestay</li>
+              <li><i data-lucide="users" aria-hidden="true"></i>Kapasitas 6-8 Orang</li>
+              <li><i data-lucide="utensils-crossed" aria-hidden="true"></i>Dapur Lengkap</li>
+              <li><i data-lucide="car" aria-hidden="true"></i>Parkir Luas</li>
+            </ul>
+            <a class="room-card-btn" href="https://wa.me/6281234567890?text=Halo%20Homestay%20Salsabila%20Syariah%2C%20saya%20ingin%20reservasi%20Whole%20House." target="_blank" rel="noopener">
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              Reservasi Sekarang
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-board section-watch" id="galeri">
+      <p class="tiny-label">*Galeri singkat</p>
+      <h2>Lihat suasana Salsabila dalam potongan kecil yang tenang.</h2>
+      <div class="board-grid">
+        <button class="gallery-trigger" type="button" data-lightbox="assets/img/gallery-landscape.jpg" data-caption="Fasad homestay">
+          <img src="assets/img/gallery-landscape.jpg" alt="Fasad homestay" loading="lazy">
+        </button>
+        <button class="gallery-trigger" type="button" data-lightbox="assets/img/gallery-bedroom.jpg" data-caption="Standard room">
+          <img src="assets/img/gallery-bedroom.jpg" alt="Standard room" loading="lazy">
+        </button>
+        <button class="gallery-trigger" type="button" data-lightbox="assets/img/gallery-living.jpg" data-caption="Ruang keluarga">
+          <img src="assets/img/gallery-living.jpg" alt="Ruang keluarga" loading="lazy">
+        </button>
+        <button class="gallery-trigger" type="button" data-lightbox="assets/img/gallery-kitchen.jpg" data-caption="Dapur bersama">
+          <img src="assets/img/gallery-kitchen.jpg" alt="Dapur bersama" loading="lazy">
+        </button>
+      </div>
+    </section>
+
+    <section class="rules-location section-watch" id="lokasi">
+      <div class="rules-panel">
+        <p class="tiny-label">*Aturan syariah</p>
+        <h2>Nyaman karena jelas sejak awal.</h2>
+        <div class="rule-list">
+          <p>Identitas diperlukan saat check-in.</p>
+          <p>Pasangan menunjukkan bukti menikah.</p>
+          <p>Menjaga ketenangan dan kebersihan.</p>
+          <p>Tidak membawa minuman beralkohol.</p>
+        </div>
+      </div>
+      <div class="location-panel">
+        <p class="tiny-label">*Lokasi</p>
+        <h2>Area Pangkalan Bun, Kalimantan Tengah.</h2>
+        <p>Dekat akses utama kota, cocok untuk keluarga dan perjalanan dinas. Lokasi lengkap dapat dikirimkan melalui WhatsApp setelah konfirmasi.</p>
+        <a class="text-link dark" href="https://wa.me/6281234567890?text=Halo%20Homestay%20Salsabila%20Syariah%2C%20saya%20ingin%20menanyakan%20lokasi%20homestay." target="_blank" rel="noopener">Minta lokasi -></a>
+      </div>
+    </section>
+
+    <section class="kontak section-watch" id="kontak">
+      <div class="kontak-shell">
+        <!-- Section label -->
+        <div class="kontak-label">
+          <span class="kontak-label-line"></span>
+          <span class="kontak-label-text">Hubungi Kami</span>
+          <span class="kontak-label-line"></span>
+        </div>
+
+        <div class="kontak-layout">
+          <!-- Left: Info cards -->
+          <div class="kontak-info">
+            <h2>Mari Terhubung<br>dengan Kami</h2>
+            <p class="kontak-intro">Kami siap membantu Anda. Jangan ragu untuk menghubungi kami melalui saluran di bawah ini atau kirim pesan langsung melalui WhatsApp.</p>
+
+            <div class="kontak-cards">
+              <article class="kontak-card">
+                <div class="kontak-card-icon">
+                  <i data-lucide="phone" aria-hidden="true"></i>
+                </div>
+                <div class="kontak-card-body">
+                  <span class="kontak-card-label">Telepon / WhatsApp</span>
+                  <a class="kontak-card-value" href="https://wa.me/6281234567890?text=Halo%20Homestay%20Salsabila%20Syariah%2C%20saya%20ingin%20menanyakan%20ketersediaan%20kamar." target="_blank" rel="noopener">0812-3456-7890</a>
+                </div>
+              </article>
+
+              <article class="kontak-card">
+                <div class="kontak-card-icon">
+                  <i data-lucide="map-pin" aria-hidden="true"></i>
+                </div>
+                <div class="kontak-card-body">
+                  <span class="kontak-card-label">Alamat</span>
+                  <p class="kontak-card-value">Area Pangkalan Bun,<br>Kalimantan Tengah</p>
+                </div>
+              </article>
+
+              <article class="kontak-card">
+                <div class="kontak-card-icon">
+                  <i data-lucide="mail" aria-hidden="true"></i>
+                </div>
+                <div class="kontak-card-body">
+                  <span class="kontak-card-label">Email</span>
+                  <a class="kontak-card-value" href="mailto:salsabilasyariah@gmail.com">salsabilasyariah@gmail.com</a>
+                </div>
+              </article>
+
+              <article class="kontak-card">
+                <div class="kontak-card-icon">
+                  <i data-lucide="camera" aria-hidden="true"></i>
+                </div>
+                <div class="kontak-card-body">
+                  <span class="kontak-card-label">Instagram</span>
+                  <a class="kontak-card-value" href="https://instagram.com/salsabilasyariah" target="_blank" rel="noopener">@salsabilasyariah</a>
+                </div>
+              </article>
             </div>
           </div>
-          <p>Kamar lebih lapang dengan suasana elegan untuk tamu yang menginginkan pengalaman istirahat istimewa.</p>
-          <ul class="zigzag-features">
-            <li><i data-lucide="bed-double"></i> King Bed</li>
-            <li><i data-lucide="coffee"></i> Coffee Corner</li>
-            <li><i data-lucide="snowflake"></i> AC</li>
-            <li><i data-lucide="wifi"></i> WiFi</li>
-          </ul>
-          <a class="btn" href="https://wa.me/6281234567890?text=Halo%20Salsabila%20Hotel%2C%20saya%20ingin%20reservasi%20Deluxe%20Room." target="_blank" rel="noopener" data-room-choice="Deluxe Room">Reservasi</a>
-        </div>
-      </article>
 
-      <article class="zigzag-item reveal">
-        <div class="zigzag-image">
-          <img src="assets/img/gallery-family-room.jpg" alt="Family Room" loading="lazy">
-          <span class="zigzag-tag">Keluarga</span>
-          <button class="zigzag-expand" type="button" data-lightbox="assets/img/gallery-family-room.jpg" data-caption="Family Room"><i data-lucide="maximize-2"></i></button>
-        </div>
-        <div class="zigzag-content">
-          <div class="zigzag-head">
-            <span class="zigzag-num">03</span>
-            <div>
-              <span class="zigzag-cap">3-4 Tamu</span>
-              <h3>Family Room</h3>
+          <!-- Right: CTA panel -->
+          <div class="kontak-cta-panel">
+            <div class="kontak-cta-badge">
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              <span>Respon Cepat</span>
+            </div>
+            <h3>Butuh Bantuan?</h3>
+            <p>Tim kami siap merespon pertanyaan Anda dalam waktu 1x24 jam. Hubungi kami sekarang untuk reservasi atau informasi lebih lanjut.</p>
+            <div class="kontak-cta-buttons">
+              <a class="kontak-btn kontak-btn-primary" href="https://wa.me/6281234567890?text=Halo%20Homestay%20Salsabila%20Syariah%2C%20saya%20ingin%20reservasi%20kamar." target="_blank" rel="noopener">
+                <i data-lucide="message-circle" aria-hidden="true"></i>
+                WhatsApp Sekarang
+              </a>
+              <a class="kontak-btn kontak-btn-secondary" href="mailto:salsabilasyariah@gmail.com">
+                <i data-lucide="mail" aria-hidden="true"></i>
+                Kirim Email
+              </a>
+            </div>
+            <div class="kontak-cta-hours">
+              <i data-lucide="clock" aria-hidden="true"></i>
+              <span>Reservasi: 24 jam · Konsultasi: 08.00 - 21.00 WIB</span>
             </div>
           </div>
-          <p>Ruang lebih lega untuk keluarga kecil yang ingin menikmati waktu bersama dengan tetap nyaman.</p>
-          <ul class="zigzag-features">
-            <li><i data-lucide="bed-double"></i> Queen + Extra Bed</li>
-            <li><i data-lucide="users"></i> 3-4 Tamu</li>
-            <li><i data-lucide="snowflake"></i> AC</li>
-            <li><i data-lucide="wifi"></i> WiFi</li>
-          </ul>
-          <a class="btn" href="https://wa.me/6281234567890?text=Halo%20Salsabila%20Hotel%2C%20saya%20ingin%20reservasi%20Family%20Room." target="_blank" rel="noopener" data-room-choice="Family Room">Reservasi</a>
-        </div>
-      </article>
-    </section>
-
-    <section class="facilities section-watch" id="fasilitas">
-      <div class="container">
-        <div class="facil-header reveal">
-          <p class="section-tag section-tag-light"><span></span>Fasilitas Hotel</p>
-          <h2 class="section-title-light">Kenyamanan esensial untuk <em>setiap perjalanan.</em></h2>
-          <p>Kami menyiapkan fasilitas penting untuk menjaga masa inap Anda tetap praktis, tenang, dan menyenangkan.</p>
-        </div>
-        <div class="facil-grid">
-          <div class="facil-item reveal"><i data-lucide="wifi"></i><h4>WiFi</h4><p>Akses internet untuk bekerja dan tetap terhubung.</p></div>
-          <div class="facil-item reveal"><i data-lucide="snowflake"></i><h4>AC</h4><p>Suhu kamar yang nyaman untuk beristirahat.</p></div>
-          <div class="facil-item reveal"><i data-lucide="car-front"></i><h4>Area Parkir</h4><p>Parkir aman untuk kendaraan pribadi.</p></div>
-          <div class="facil-item reveal"><i data-lucide="concierge-bell"></i><h4>Resepsionis</h4><p>Bantuan ramah untuk kebutuhan tamu.</p></div>
-          <div class="facil-item reveal"><i data-lucide="bath"></i><h4>Kamar Mandi</h4><p>Kebersihan di setiap kamar mandi pribadi.</p></div>
-          <div class="facil-item reveal"><i data-lucide="message-circle-more"></i><h4>Reservasi WhatsApp</h4><p>Konfirmasi kamar mudah via WhatsApp.</p></div>
-          <div class="facil-item reveal"><i data-lucide="map-pin"></i><h4>Lokasi Strategis</h4><p>Mudah dijangkau dari area kota.</p></div>
-          <div class="facil-item reveal"><i data-lucide="moon-star"></i><h4>Lingkungan Tenang</h4><p>Suasana nyaman untuk istirahat.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="gallery section-watch" id="galeri">
-      <div class="gallery-header reveal">
-        <div class="container">
-          <p class="section-tag"><span></span>Galeri Hotel</p>
-          <h2 class="section-title">Detail kecil yang membuat Anda <em>merasa nyaman.</em></h2>
-          <p>Lihat lebih dekat suasana kamar dan ruang bersama yang disiapkan untuk membuat masa inap terasa lebih menyenangkan.</p>
-        </div>
-      </div>
-      <div class="gallery-track">
-        <button class="gallery-item gallery-tall reveal" type="button" data-lightbox="assets/img/hero.jpg" data-caption="Kamar yang tenang dan tertata">
-          <img src="assets/img/hero.jpg" alt="Kamar hotel" loading="lazy">
-          <span>Kamar</span>
-          <i data-lucide="plus"></i>
-        </button>
-        <button class="gallery-item reveal" type="button" data-lightbox="assets/img/gallery-exterior.jpg" data-caption="Area eksterior hotel">
-          <img src="assets/img/gallery-exterior.jpg" alt="Eksterior" loading="lazy">
-          <span>Eksterior</span>
-          <i data-lucide="plus"></i>
-        </button>
-        <button class="gallery-item reveal" type="button" data-lightbox="assets/img/living-room.jpg" data-caption="Ruang bersama yang lapang">
-          <img src="assets/img/living-room.jpg" alt="Ruang bersama" loading="lazy">
-          <span>Ruang Bersama</span>
-          <i data-lucide="plus"></i>
-        </button>
-        <button class="gallery-item gallery-wide reveal" type="button" data-lightbox="assets/img/gallery-family-room.jpg" data-caption="Family Room">
-          <img src="assets/img/gallery-family-room.jpg" alt="Family Room" loading="lazy">
-          <span>Family Space</span>
-          <i data-lucide="plus"></i>
-        </button>
-        <button class="gallery-item reveal" type="button" data-lightbox="assets/img/gallery-living.jpg" data-caption="Sudut santai Salsabila Hotel">
-          <img src="assets/img/gallery-living.jpg" alt="Sudut santai" loading="lazy">
-          <span>Sudut Santai</span>
-          <i data-lucide="plus"></i>
-        </button>
-      </div>
-    </section>
-
-    <section class="location section-watch" id="lokasi">
-      <div class="location-wrap">
-        <div class="location-content reveal">
-          <p class="section-tag"><span></span>Lokasi Hotel</p>
-          <h2 class="section-title">Beristirahat nyaman di <em>Pangkalan Bun.</em></h2>
-          <p>Berada di area Pangkalan Bun, Kalimantan Tengah, Salsabila Hotel mudah dijadikan titik singgah untuk agenda keluarga, kunjungan luar kota, maupun perjalanan bisnis.</p>
-          <div class="loc-address">
-            <i data-lucide="map-pinned"></i>
-            <div><span>Alamat</span><strong>Area Pangkalan Bun, Kabupaten Kotawaringin Barat, Kalimantan Tengah</strong></div>
-          </div>
-          <div class="loc-points">
-            <div><i data-lucide="navigation"></i><div><strong>Mudah Dijangkau</strong><small>Akses praktis dari area kota</small></div></div>
-            <div><i data-lucide="moon-star"></i><div><strong>Lingkungan Tenang</strong><small>Nyaman untuk beristirahat</small></div></div>
-          </div>
-          <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Pangkalan+Bun%2C+Kalimantan+Tengah" target="_blank" rel="noopener">Buka Google Maps</a>
-        </div>
-        <div class="location-map reveal">
-          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=111.54%2C-2.76%2C111.70%2C-2.60&amp;layer=mapnik&amp;marker=-2.6834%2C111.6163" loading="lazy" referrerpolicy="no-referrer" title="Peta Salsabila Hotel"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="container">
-        <div class="final-cta-inner reveal">
-          <p class="section-tag section-tag-light"><span></span>Reservasi Langsung</p>
-          <h2>Rencanakan perjalanan Anda bersama Salsabila Hotel.</h2>
-          <p>Nikmati tempat menginap yang bersih, nyaman, dan tenang dengan proses reservasi yang mudah.</p>
-          <a class="btn btn-white" href="https://wa.me/6281234567890?text=Halo%20Salsabila%20Hotel%2C%20saya%20ingin%20menanyakan%20ketersediaan%20kamar." target="_blank" rel="noopener">
-            Reservasi via WhatsApp <i data-lucide="message-circle"></i>
-          </a>
-        </div>
-      </div>
+    <section class="footer-image">
+      <img src="assets/img/gallery-landscape.jpg" alt="Homestay Salsabila Syariah" loading="lazy">
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="site-logo" href="#home">
-            <span class="site-logo-mark">S</span>
-            <span class="site-logo-text">
-              <strong>Salsabila</strong>
-              <small>Hotel</small>
-            </span>
-          </a>
-          <p>Hotel syariah yang nyaman, bersih, dan terpercaya untuk keluarga maupun perjalanan bisnis di Pangkalan Bun.</p>
-        </div>
-        <div class="footer-col">
-          <h5>Menu</h5>
-          <a href="#tentang">Tentang</a>
-          <a href="#kamar">Kamar</a>
-          <a href="#fasilitas">Fasilitas</a>
-          <a href="#galeri">Galeri</a>
-          <a href="#lokasi">Lokasi</a>
-        </div>
-        <div class="footer-col">
-          <h5>Kontak</h5>
-          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">0812-3456-7890</a>
-          <a href="mailto:salsabilasyariah@gmail.com">salsabilasyariah@gmail.com</a>
-          <a href="https://instagram.com/salsabilasyariah" target="_blank" rel="noopener">@salsabilasyariah</a>
-        </div>
-        <div class="footer-col">
-          <h5>Reservasi</h5>
-          <p>Konsultasikan kebutuhan menginap Anda langsung dengan pengelola.</p>
-          <a class="footer-wa" href="https://wa.me/6281234567890?text=Halo%20Salsabila%20Hotel%2C%20saya%20ingin%20menanyakan%20ketersediaan%20kamar." target="_blank" rel="noopener">Reservasi via WhatsApp</a>
-        </div>
+    <div class="footer-main">
+      <div class="footer-brand-block">
+        <p class="tiny-label">*Homestay Syariah</p>
+        <h2>Homestay Salsabila</h2>
+        <p>Penginapan syariah yang tenang, bersih, dan ramah keluarga di Pangkalan Bun.</p>
       </div>
-      <div class="footer-bot">
-        <span>&copy; <span id="currentYear">2026</span> Salsabila Hotel</span>
-        <span>Hotel Syariah &middot; Pangkalan Bun</span>
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <a href="#tentang">Tentang</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#kamar">Kamar</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="https://wa.me/6281234567890?text=Halo%20Homestay%20Salsabila%20Syariah%2C%20saya%20ingin%20menanyakan%20ketersediaan%20kamar." target="_blank" rel="noopener">Reservasi</a>
+      </nav>
+    </div>
+
+    <!-- Google Maps -->
+    <div class="footer-map">
+      <div class="footer-map-label">
+        <i data-lucide="map-pin" aria-hidden="true"></i>
+        <span>Temukan Lokasi Kami</span>
       </div>
+      <div class="footer-map-embed">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d511259.504543826!2d111.08994254239568!3d-2.683447316975808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1dc2a1d54927f%3A0x6c8c5e0c5b5c5f0!2sPangkalan%20Bun%2C%20Kabupaten%20Kotawaringin%20Barat%2C%20Kalimantan%20Tengah!5e0!3m2!1sid!2sid!4v1710000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi Homestay Salsabila Syariah di Pangkalan Bun"></iframe>
+      </div>
+    </div>
+
+    <!-- Visitor Counter -->
+    <div class="footer-visitors">
+      <div class="visitor-item">
+        <i data-lucide="eye" aria-hidden="true"></i>
+        <span class="visitor-label">Kunjungan Hari Ini</span>
+        <span class="visitor-number" id="visitorToday">0</span>
+      </div>
+      <div class="visitor-divider"></div>
+      <div class="visitor-item">
+        <i data-lucide="bar-chart-3" aria-hidden="true"></i>
+        <span class="visitor-label">Total Kunjungan</span>
+        <span class="visitor-number" id="visitorTotal">0</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 Homestay Salsabila Syariah</span>
+      <span>All rights reserved</span>
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/6281234567890?text=Halo%20Salsabila%20Hotel%2C%20saya%20ingin%20menanyakan%20ketersediaan%20kamar." target="_blank" rel="noopener" aria-label="Reservasi via WhatsApp">
-    <i data-lucide="message-circle"></i><span>Reservasi</span>
+  <a class="floating-whatsapp" href="https://wa.me/6281234567890?text=Halo%20Homestay%20Salsabila%20Syariah%2C%20saya%20ingin%20menanyakan%20ketersediaan%20kamar." target="_blank" rel="noopener" aria-label="Reservasi via WhatsApp">
+    <i data-lucide="message-circle" aria-hidden="true"></i>
   </a>
 
-  <button class="top-btn" id="topBtn" type="button" aria-label="Kembali ke atas">
-    <i data-lucide="arrow-up"></i>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Kembali ke atas">
+    <i data-lucide="arrow-up" aria-hidden="true"></i>
   </button>
 
-  <div class="lb" id="lb" role="dialog" aria-label="Pratinjau galeri" inert>
-    <button class="lb-close" id="lbClose" type="button" aria-label="Tutup"><i data-lucide="x"></i></button>
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Preview galeri">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Tutup preview">
+      <i data-lucide="x" aria-hidden="true"></i>
+    </button>
     <figure>
-      <img id="lbImg" src="" alt="">
-      <figcaption id="lbCap"></figcaption>
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
     </figure>
   </div>
 
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <script>
-    const H=document.getElementById("siteHeader"),B=document.getElementById("menuBtn"),M=document.getElementById("siteNav"),L=document.querySelectorAll(".site-nav-link"),T=document.getElementById("topBtn"),HL=H.querySelector(".site-logo");
-    const c=()=>{M.classList.remove("open"),B.classList.remove("is-open"),H.classList.remove("menu-open"),document.body.classList.remove("menu-open"),B.setAttribute("aria-expanded","false"),B.setAttribute("aria-label","Buka menu")};
-    B.addEventListener("click",()=>{const e=M.classList.toggle("open");B.classList.toggle("is-open",e),H.classList.toggle("menu-open",e),document.body.classList.toggle("menu-open",e),B.setAttribute("aria-expanded",String(e)),B.setAttribute("aria-label",e?"Tutup menu":"Buka menu")});
-    L.forEach(e=>e.addEventListener("click",c));
-    HL.addEventListener("click",c);
-    window.addEventListener("resize",()=>{window.innerWidth>768&&M.classList.contains("open")&&c()},{passive:true});
-    window.addEventListener("scroll",()=>{H.classList.toggle("scrolled",window.scrollY>20),T.classList.toggle("show",window.scrollY>500)},{passive:true});
-    T.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
-    const S=document.querySelectorAll(".section-watch");
-    if("IntersectionObserver" in window){const e=new IntersectionObserver(n=>{n.forEach(n=>{if(!n.isIntersecting)return;document.querySelectorAll(".site-nav-link").forEach(e=>{e.classList.toggle("active",e.getAttribute("href")==="#"+n.target.id)})})},{rootMargin:"-38% 0px -52% 0px",threshold:0});S.forEach(n=>e.observe(n))}
-    const R=document.querySelectorAll(".reveal");
-    R.forEach((e,n)=>{e.style.setProperty("--delay",Math.min(n%4*70,210)+"ms")});
-    if("IntersectionObserver" in window){const e=new IntersectionObserver((n,o)=>{n.forEach(n=>{if(!n.isIntersecting)return;n.target.classList.add("is-visible"),o.unobserve(n.target)})},{rootMargin:"0px 0px -10% 0px",threshold:.08});R.forEach(n=>e.observe(n))}else R.forEach(e=>e.classList.add("is-visible"));
-    if(window.location.hash){const e=document.querySelector(window.location.hash);if(e){e.classList.add("is-visible");e.querySelectorAll(".reveal").forEach(n=>n.classList.add("is-visible"))}}
-    const F=document.getElementById("reservationForm"),i=document.getElementById("checkIn"),o=document.getElementById("checkOut"),r=document.getElementById("roomType"),g=document.getElementById("guestCount"),m=document.getElementById("formMessage"),C=document.querySelectorAll("[data-room-choice]"),p="6281234567890";
-    const d=e=>{const n=e.getTimezoneOffset();return new Date(e.getTime()-n*60000).toISOString().split("T")[0]},f=e=>new Intl.DateTimeFormat("id-ID",{day:"numeric",month:"long",year:"numeric"}).format(new Date(e+"T00:00:00"));
-    const v=new Date(),y=new Date(v);y.setDate(y.getDate()+1);i.min=d(v);o.min=d(y);
-    i.addEventListener("change",()=>{if(!i.value)return;const e=new Date(i.value+"T00:00:00");e.setDate(e.getDate()+1),o.min=d(e),(!o.value||o.value<=i.value)&&(o.value=d(e)),m.classList.remove("show")});
-    F.addEventListener("submit",e=>{e.preventDefault();if(!i.value||!o.value||o.value<=i.value){m.textContent="Pilih tanggal check-in dan check-out yang sesuai.",m.classList.add("show");return}m.classList.remove("show");const n=["Halo Salsabila Hotel, saya ingin mengecek ketersediaan:","","Tipe kamar: "+r.value,"Check-in: "+f(i.value),"Check-out: "+f(o.value),"Jumlah tamu: "+g.value,"","Mohon informasi ketersediaan dan harga terbaiknya. Terima kasih."].join("\n");window.open("https://wa.me/"+p+"?text="+encodeURIComponent(n),"_blank","noopener")});
-    C.forEach(e=>e.addEventListener("click",()=>{r.value=e.dataset.roomChoice}));
-    const b=document.getElementById("lb"),q=document.getElementById("lbImg"),k=document.getElementById("lbCap"),z=document.getElementById("lbClose");let $=null;
-    document.querySelectorAll("[data-lightbox]").forEach(e=>{e.addEventListener("click",()=>{$=e,q.src=e.dataset.lightbox,q.alt=e.dataset.caption||"Foto Salsabila Hotel",k.textContent=e.dataset.caption||"Salsabila Hotel",b.classList.add("open"),b.removeAttribute("inert"),document.body.classList.add("lightbox-open"),z.focus()})});
-    const x=()=>{b.classList.remove("open"),b.setAttribute("inert",""),document.body.classList.remove("lightbox-open"),q.removeAttribute("src"),$&&$.focus(),$=null};
-    z.addEventListener("click",x);b.addEventListener("click",e=>{e.target===b&&x()});
-    document.addEventListener("keydown",e=>{if(e.key!=="Escape")return;b.classList.contains("open")&&x();M.classList.contains("open")&&c()});
-    document.getElementById("currentYear").textContent=new Date().getFullYear();
-    window.lucide&&window.lucide.createIcons();
-  </script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
